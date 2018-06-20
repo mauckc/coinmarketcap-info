@@ -33,3 +33,5 @@ coin_ids.json:
   "Verge": 693
 }
 ```
+
+Now with more than 60 of the top coins added to the above group

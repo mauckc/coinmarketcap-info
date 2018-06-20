@@ -74,7 +74,28 @@ user_coin_choice = raw_input("What coin would you like info for?: ")
 coinkeys = coin_index_data.keys()
 ```
 
-coin market cap coin names to ids stored in json format with simple structured list:
+If user enters correct coin name that matches a key in list coinkeys
+    get the data
+else prompt user again 
+    if user correct choice
+    get the data
+    else say "Sorry that is still not a correct option"
+    
+```python
+if user_coin_choice in coinkeys:
+    getticker(coin_index_data[user_coin_choice])
+else:
+    print("That is not a valid choice. Please use full name with caps. (i.e. Ethereum)\nPlease Try again.\n")
+    user_coin_choice = raw_input("What coin would you like info for?: ")
+    if user_coin_choice in coinkeys:
+        getticker(coin_index_data[user_coin_choice])
+    else:
+        print("I'm sorry that is still not an accepable coin name")
+```
+
+### coin_ids.json
+
+User input cross-checked with manually added coin market cap coin name keys with to id values stored in json format with simple structured list as shown below and in file "coinmarketcap-info/data/coin_ids.json":
 
 Initially as of Tuesday, June 19th, 2018 I have only written 24 entries.
 Therefore, only 24 coins names are possible input strings for user choice of coin
@@ -108,24 +129,4 @@ coin_ids.json:
   "Bytecoin": 372,
   "Verge": 693
 }
-```
-
-
-If user enters correct coin name that matches a key in list coinkeys
-    get the data
-else prompt user again 
-    if user correct choice
-    get the data
-    else say "Sorry that is still not a correct option"
-    
-```python
-if user_coin_choice in coinkeys:
-    getticker(coin_index_data[user_coin_choice])
-else:
-    print("That is not a valid choice. Please use full name with caps. (i.e. Ethereum)\nPlease Try again.\n")
-    user_coin_choice = raw_input("What coin would you like info for?: ")
-    if user_coin_choice in coinkeys:
-        getticker(coin_index_data[user_coin_choice])
-    else:
-        print("I'm sorry that is still not an accepable coin name")
 ```

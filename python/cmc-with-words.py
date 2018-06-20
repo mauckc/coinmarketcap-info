@@ -49,6 +49,12 @@ def getticker(n):
     else:
         print("Max Supply: " + p.number_to_words(int(tickermaxsupply)) )
 
+# Set up listings information retrieval
+listingsurl = "https://api.coinmarketcap.com/v2/listings/"
+listingsresponse = urllib.urlopen(listingsurl)
+listingsdata = json.loads(listingsresponse.read())  
+
+print(listingsdata["data"]["name"])
 
 # Set up coin interface index json functionality
 json_coin_index_data = open("../data/coin_ids.json").read()

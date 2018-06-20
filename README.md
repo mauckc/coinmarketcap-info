@@ -5,6 +5,8 @@ It will respond with ticker price, market cap, price change percentages etc.
 
 Input:
 ```bash
+cd python/
+
 python cmc-with-words.py
 ```
 Output:

@@ -50,7 +50,7 @@ def getticker(n):
 
 
 # Set up coin interface index json functionality
-json_coin_index_data = open("coin_ids.json").read()
+json_coin_index_data = open("../data/coin_ids.json").read()
 coin_index_data = json.loads(json_coin_index_data)
 
 user_coin_choice = raw_input("What coin would you like info for?: ")

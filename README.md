@@ -144,6 +144,8 @@ User input cross-checked with manually added coin market cap coin name keys with
 Initially as of Tuesday, June 19th, 2018 I have only written 24 entries.
 Therefore, only 24 coins names are possible input strings for user choice of coin
 
+I over doubled this amount later that night.
+
 coin_ids.json:
 ```javascript
 {

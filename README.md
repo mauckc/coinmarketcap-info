@@ -1,3 +1,41 @@
+### Usage
+Run the code and it will ask you what cryptocurrency you would like to know current market information for.
+
+It will respond with ticker price, market cap, price change percentages etc.
+
+Input:
+```bash
+python cmc-with-words.py
+```
+Output:
+```bash
+What coin would you like info for?: 
+```
+You type
+Input:
+```bash
+Ethereum
+```
+Output:
+```bash
+Getting ticker data for coin with id: 1027
+Name: Ethereum
+Symbol: ETH
+Rank: two
+Price: five hundred and twenty-two
+Market Cap: fifty-two billion, three hundred and seven million, seven hundred and forty thousand, nine hundred and six
+24h Volume: one billion, seven hundred and ninety-four million, nine hundred and eighty thousand
+Price Change 1h: -0.07
+Price Change 24h: 0.84
+Price Change 7d: 5.29
+Total Supply: one hundred million, one hundred and eighty-four thousand, one hundred and thirty-seven
+Circulating Supply: one hundred million, one hundred and eighty-four thousand, one hundred and thirty-seven
+Max Supply: None
+```
+
+You will have two attempts to enter a correct name. 
+Input format is case-sensitve (i.e. Ethereum will work, but ethereum and ETH will not)
+
 ### Dependencies
 urllib and json libraries should be native to python 2.7.15 however inflect will most likely neeed to be installed
 

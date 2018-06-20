@@ -1,6 +1,14 @@
+### Dependencies
+urllib and json libraries should be native to python 2.7.15 however inflect will most likely neeed to be installed
+
 ```python
 import urllib, json
 import inflect
+```
+
+if you do not have inflect installed enter the following in your command prompt or terminal
+```bash
+pip install inflect
 ```
 
 ### Number to Words with Inflect Library

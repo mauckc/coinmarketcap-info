@@ -17,7 +17,7 @@ Input:
 Ethereum
 ```
 Output:
-```bash
+```
 Getting ticker data for coin with id: 1027
 Name: Ethereum
 Symbol: ETH

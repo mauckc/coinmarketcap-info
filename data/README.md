@@ -4,7 +4,7 @@ Initially as of Tuesday, June 19th, 2018 I have only written 24 entries.
 Therefore, only 24 coins names are possible input strings for user choice of coin
 
 coin_ids.json:
-'''python
+```javascript
 {
   "Bitcoin": 1,
   "Ethereum": 1027,
@@ -32,4 +32,4 @@ coin_ids.json:
   "Bytecoin": 372,
   "Verge": 693
 }
-'''
+```

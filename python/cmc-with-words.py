@@ -1,5 +1,6 @@
 import urllib, json
 import inflect
+
 # Read ticker information from coinmarketcap and function for parsing
 # information by specific coins using their coin index (i.e. Ethereum = 1027)
 

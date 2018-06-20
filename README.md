@@ -1,7 +1,11 @@
 ### Usage
 Run the code and it will ask you what cryptocurrency you would like to know current market information for.
 
-It will respond with ticker price, market cap, price change percentages etc.
+The program will execute a CoinMarketCap API call that will respond with real-time information on user specific coins
+
+information includes: ticker price, market cap, price change percentages etc.
+
+Large number are converted to words with inflect library
 
 Input:
 ```bash

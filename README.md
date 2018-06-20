@@ -8,7 +8,7 @@ Input:
 python cmc-with-words.py
 ```
 Output:
-```bash
+```
 What coin would you like info for?: 
 ```
 You type
